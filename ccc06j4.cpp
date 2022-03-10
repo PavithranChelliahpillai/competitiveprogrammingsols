@@ -1,0 +1,49 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define A cin
+#define B cout
+#define C int
+#define D for
+#define E if
+#define G while
+#define H return
+#define I priority_queue
+#define J .
+#define K greater
+#define L vector
+#define M push_back
+#define N push
+#define O size
+#define P main
+#define Q (
+#define R )
+#define S {
+#define T }
+#define U =
+#define V ==
+#define W pop
+#define X empty
+#define Y top
+#define Z ;
+#define AA ,
+#define BB [
+#define CC ]
+#define DD ++
+#define EE --
+#define FF !=
+#define GG !
+#define HH <<
+#define II >>
+#define JJ >
+#define KK <
+#define LL 1
+#define MM 0
+#define NN 2
+#define OO 3
+#define PP 4
+#define QQ 5
+#define RR 7 
+#define SS 8
+#define TT "Cannot complete these tasks. Going to bed."
+#define UU " "
+C P Q R S C a U MM AA b U MM Z A II a II b Z L KK L KK C JJ JJ c Q SS R Z L KK C JJ r U S MM AA LL AA MM AA MM AA NN AA LL AA MM AA LL T Z L KK C JJ x Q RR AA MM R Z c BB LL CC J M Q RR R Z c BB LL CC J M Q PP R Z c BB NN CC J M Q LL R Z c BB OO CC J M Q PP R Z c BB OO CC J M Q QQ R Z G Q a FF MM R S c BB a CC J M Q b R Z r BB b CC DD Z A II a II b Z T I KK C AA L KK C JJ  AA K KK C II d Z D Q C i U LL Z i KK SS Z i DD R S E Q r BB i CC V MM R S d J N Q i R Z T T C e U MM Z G Q GG d J X Q R R S C l U d J Y Q R Z d J W Q R Z x BB e CC U l Z Z D  Q C i U MM Z i KK c BB l CC J O Q R Z i DD R S r BB c BB l CC BB i CC CC EE Z E Q r BB c BB l CC BB i CC CC V MM R d J N Q c BB l CC BB i CC R Z T e DD Z T E Q e FF RR R S B HH TT Z H MM Z T D Q C i U MM Z i KK x J O Q R Z i DD R B HH x BB i CC HH UU Z T

@@ -1,24 +1,19 @@
-#include <bits/stdc++.h>
-using namespace std;
-#define int long long int
-#define INF 0x3f3f3f3f
-#define MAX 10000001
-#pragma GCC optimize("O2")
-#pragma GCC optimize("trapv")
-#pragma GCC target("avx2,bmi,bmi2,popcnt,lzcnt")
-int32_t main(){
-  int a,b; cin>>a>>b;
-  if (b>a) {cout<<"-1\n"; return 0;}
-  b=a-b;
-  if (b%2) cout<<"-1\n";
-  else {
-    int r=a;
-    auto c=[&](int z) {
-      r--; cout<<z+2;
-      if (r!=0) cout<<' ';
-    };
-    for (int i=0; i<b/2; i++) c(0),c(1);
-    for (int i=0; i<a-b; i++) c(0);
-    cout<<endl;
-  }
-}
+Please wait...
+We are checking your browser... dmoj.ca
+  
+
+Please stand by, while we are checking your browser...
+
+Why do I have to complete a CAPTCHA?
+
+Completing the CAPTCHA proves you are a human and gives you temporary access to the web property.
+
+What can I do to prevent this in the future?
+
+If you are on a personal connection, like at home, you can run an anti-virus scan on your device to make sure it is not infected with malware.
+
+If you are at an office or shared network, you can ask the network administrator to run a scan across the network looking for misconfigured or infected devices.
+
+Another way to prevent getting this page in the future is to use Privacy Pass. You may need to download version 2.0 now from the Chrome Web Store.
+
+Cloudflare Ray ID: 6e96563b0a3e2d6d • Your IP: 205.167.54.235 • Performance & security by Cloudflare

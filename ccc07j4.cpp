@@ -1,0 +1,3 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {string a,b; getline(cin,a);getline(cin,b);std::string::iterator end_pos = std::remove(a.begin(), a.end(), ' ');a.erase(end_pos, a.end());std::string::iterator end_pos1 = std::remove(b.begin(), b.end(), ' ');b.erase(end_pos1, b.end());sort(a.begin(), a.end());sort(b.begin(), b.end()); if (a==b) cout<<"Is an anagram."; else cout<<"Is not an anagram.";}
