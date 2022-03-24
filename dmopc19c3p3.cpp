@@ -13,16 +13,26 @@ typedef tree<pair<int, int> , null_type, less<pair<int, int>>, rb_tree_tag,tree_
 //#pragma GCC optimize("O3","unroll-loops")
 //#pragma GCC optimize("trapv")
 //#pragma GCC target("avx2,bmi,bmi2,popcnt,lzcnt")
+vector<int>bit(300010);
+void updt (int x) {
+    x+=150005;
+    for (int i=x; i<bit.size(); i+=i&-i) bit[i]++;
+}
+int sum (int x) {
+    x+=150005;
+    int sum=0;
+    for (int i=x; i>0; i-=i&-i) sum+=bit[i];
+    return sum;
+}
 int32_t main() {
     fio;
-    int n, ans=0,n5,num4; cin>>n;
-    for(int i=0; i<=ceil(n/4); i++){
-        n5=i*4;
-        if(n5>n) break;
-        else{
-            num4=n-n5;
-            if(num4%5==0)ans++;
-        }
+    int n; cin>>n; int count=0,ans=0;
+    updt(0);
+    for (int i=0; i<n; i++) {
+        int a; cin>>a; 
+        count+=(a==2?-1:1);
+        ans+=sum(count-1);
+        updt(count);
     }
     cout<<ans<<endl;
 }

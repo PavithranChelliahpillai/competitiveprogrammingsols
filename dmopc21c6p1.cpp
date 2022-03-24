@@ -1,19 +1,23 @@
-Please wait...
-We are checking your browser... dmoj.ca
-  
-
-Please stand by, while we are checking your browser...
-
-Why do I have to complete a CAPTCHA?
-
-Completing the CAPTCHA proves you are a human and gives you temporary access to the web property.
-
-What can I do to prevent this in the future?
-
-If you are on a personal connection, like at home, you can run an anti-virus scan on your device to make sure it is not infected with malware.
-
-If you are at an office or shared network, you can ask the network administrator to run a scan across the network looking for misconfigured or infected devices.
-
-Another way to prevent getting this page in the future is to use Privacy Pass. You may need to download version 2.0 now from the Chrome Web Store.
-
-Cloudflare Ray ID: 6e96563e38542d6d • Your IP: 205.167.54.235 • Performance & security by Cloudflare
+#include<bits/stdc++.h>
+using namespace std;
+#define int long long int
+#define endl '\n'
+#define fendl endl
+#define fio ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
+#define INF 0x3f3f3f3f
+#define MAX 1e9
+#pragma GCC optimize("O3","unroll-loops")
+//#pragma GCC optimize("trapv")
+#pragma GCC target("avx2,bmi,bmi2,popcnt,lzcnt")
+int32_t main() {
+    fio;
+    int a; string b; cin>>a>>b;
+    for (int i=0; i<b.size(); i++) {
+        if ((int)b[i]<(int)b[i+1]) {
+            char c=b[i];
+            b[i]=b[i+1]; b[i+1]=c;
+            cout<<b<<endl; return 0;
+        }
+    }
+    cout<<b<<endl; return 0;
+}

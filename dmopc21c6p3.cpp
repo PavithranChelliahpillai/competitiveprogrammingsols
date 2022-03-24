@@ -9,9 +9,9 @@ using namespace std;
 #define MAX 1e9
 vector<int>xtry={0,0,1,-1};
 vector<int>ytry={1,-1,0,0};
-//#pragma GCC optimize("O3","unroll-loops")
+#pragma GCC optimize("O3","unroll-loops")
 //#pragma GCC optimize("trapv")
-//#pragma GCC target("avx2,bmi,bmi2,popcnt,lzcnt")
+#pragma GCC target("avx2,bmi,bmi2,popcnt,lzcnt")
 int32_t main() {
     fio;
     int a,b,k; cin>>a>>b>>k; int d[a+5][b+5]; int v[a+5][b+5]; 

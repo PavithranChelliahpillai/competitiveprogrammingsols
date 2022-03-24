@@ -15,14 +15,8 @@ typedef tree<pair<int, int> , null_type, less<pair<int, int>>, rb_tree_tag,tree_
 //#pragma GCC target("avx2,bmi,bmi2,popcnt,lzcnt")
 int32_t main() {
     fio;
-    int n, ans=0,n5,num4; cin>>n;
-    for(int i=0; i<=ceil(n/4); i++){
-        n5=i*4;
-        if(n5>n) break;
-        else{
-            num4=n-n5;
-            if(num4%5==0)ans++;
-        }
-    }
-    cout<<ans<<endl;
+    int n; cin>>n; vector<int>nums(n);
+    for (int i=0; i<n; i++) cin>>nums[i];
+    sort(nums.begin(),nums.end());
+    cout<<nums[ceil(n/2)]<<endl;
 }

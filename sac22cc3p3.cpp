@@ -1,19 +1,31 @@
-Please wait...
-We are checking your browser... dmoj.ca
-  
-
-Please stand by, while we are checking your browser...
-
-Why do I have to complete a CAPTCHA?
-
-Completing the CAPTCHA proves you are a human and gives you temporary access to the web property.
-
-What can I do to prevent this in the future?
-
-If you are on a personal connection, like at home, you can run an anti-virus scan on your device to make sure it is not infected with malware.
-
-If you are at an office or shared network, you can ask the network administrator to run a scan across the network looking for misconfigured or infected devices.
-
-Another way to prevent getting this page in the future is to use Privacy Pass. You may need to download version 2.0 now from the Chrome Web Store.
-
-Cloudflare Ray ID: 6e9656455fd82d6d • Your IP: 205.167.54.235 • Performance & security by Cloudflare
+#include <bits/stdc++.h>
+using namespace std;
+#define int long long 
+#pragma GCC optimize("O2")
+#pragma GCC optimize("unroll-loops")
+#pragma GCC target("avx2,bmi,bmi2,popcnt,lzcnt")
+int r=1;
+bool compare(pair<int,int> b,pair<int,int> c){
+  int d = pow(10,r);
+  b.first = b.first%d;
+  c.first = c.first%d;
+  return(b.first<c.first || (b.first==c.first && b.second<c.second));
+}
+int32_t main() {
+ios_base::sync_with_stdio(false);
+cin.tie(NULL);
+  int a; cin>>a; vector<pair<int,int>>b(a);
+  for (int i=0; i<a; i++) {
+      cin>>b[i].first;
+      b[i].second = i;
+  }
+  int z=(*max_element(b.begin(),b.end())).first;
+  for (int i=1; i<=floor(log10(z))+1; i++) {
+    r=i;
+    sort(b.begin(),b.end(),compare);
+    for(int j=0;j<b.size()-1;j++) {
+      cout << b[j].first << " ";
+    }
+    cout << b[b.size()-1].first << "\n";
+  }
+}

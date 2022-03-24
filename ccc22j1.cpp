@@ -3,6 +3,5 @@
 using namespace std;
 
 int main() {
-    cout << "Hello, World!\n";
-    return 0;
+    int a,b; cin>>a>>b; cout<<(a*8+b*3)-28<<endl;
 }
