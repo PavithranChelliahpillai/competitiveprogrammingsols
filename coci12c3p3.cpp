@@ -1,7 +1,7 @@
-#include <cstdio>
-#include <cstring>
+#include <bits/stdc++.h>
 using namespace std;
 int a[32], b[300005];
+
 void fastscan(int &number)
 {
     bool negative = false;
