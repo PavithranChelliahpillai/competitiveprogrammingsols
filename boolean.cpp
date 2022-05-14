@@ -13,16 +13,19 @@ typedef tree<pair<int, int> , null_type, less<pair<int, int>>, rb_tree_tag,tree_
 #define INF 0x3f3f3f3f3f3f3f3f
 #define scan(x) do{while((x=getchar())<'0'); for(x-='0'; '0'<=(_=getchar()); x=(x<<3)+(x<<1)+_-'0');}while(0)
 char _;
-//#pragma GCC optimize("O3","unroll-loops")
+#pragma GCC optimize("O3","unroll-loops")
 //#pragma GCC optimize("trapv")
-//#pragma GCC target("avx2,bmi,bmi2,popcnt,lzcnt")
+#pragma GCC target("avx2,bmi,bmi2,popcnt,lzcnt")
 int max(int a, int b) {return (a>b)?a:b;}
 int min(int a, int b) {return (a<b)?a:b;}
 int ceil (int x, int y) {return (x+y-1)/y;}
+string s; bool n=false;
 int32_t main() {
     fio;
-    int a; cin>>a;
-    while (a-- ) {
-        int b, c; cin>>b>>c; cout<<b+c<<endl;
+    while (1) {
+        cin>>s; 
+        if (s!="not") break;
+        n=!n;
     }
+    cout<<((s=="True")?((n==1)?"False":"True"):((n==1)?"True":"False"))<<endl;
 }
